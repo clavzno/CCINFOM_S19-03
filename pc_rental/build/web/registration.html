@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #3498db;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ecf0f1;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: #2980b9;
+            color: #ecf0f1;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>a
+
+<body>
+    <form action="account_processing.jsp" method="post">
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" required>
+
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" required>
+
+        <label for="contactnumber">Contact Number:</label>
+        <input type="text" name="contactnumber" required>
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+
+        <label for="balance">Balance:</label>
+        <input type="text" name="balance" required>
+
+        <input type="submit" value="Create Account">
+    </form>
+</body>
+
+</html>
